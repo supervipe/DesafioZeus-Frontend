@@ -1,17 +1,41 @@
-import React from 'react'
-import { Link } from 'react-dom'
+import React,{useState} from 'react';
+import './Navbar.css';
 
-export default function Navbar() {
-    return (
-        <>
-            <nav className ="navbar">
-                <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
-                        
-                    </Link>
-                </div>
+class Navbar extends React.Component {
+    state = { clicked: false }
 
-            </nav>
-        </>
-    );
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked })
+    }
+    render(){
+        return (
+            <>
+                <nav className="NavbarItems">
+                    <h1 className="navbar-logo">Controle Pet<i className="fab fa-react"></i></h1>
+                    <div className="menu-icon" onClick={this.handleClick}>
+                        <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                    </div>
+                    <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                        <li>
+                            <a className="nav-links" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a className="nav-links" href="/">
+                                Compras
+                            </a>
+                        </li>
+                        <li>
+                            <a className="nav-links" href="/">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </>
+        )
+    }
 }
+
+export default Navbar

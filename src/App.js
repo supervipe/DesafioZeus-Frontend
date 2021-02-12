@@ -5,10 +5,14 @@ import Navbar from './navbar/Navbar.jsx';
 export default class App extends React.Component{
   render(){
     return (
-      <div className="App">
-        <Navbar />
-        
-      </div>
+      <>
+        <div className= "App">
+          <Navbar />
+          <div className="tabela-inicial">
+            <h1>Zeus</h1>
+          </div>
+        </div>
+      </>
     );
   }
 }

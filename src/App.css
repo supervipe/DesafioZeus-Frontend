@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
-
+body,html{
+  background-color: #B6B9B8;
+}
+.tabela-inicial{
+  background-color: #8AE9C1;
+  margin: auto;
+  width: 60%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
