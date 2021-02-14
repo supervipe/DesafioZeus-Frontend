@@ -8,9 +8,16 @@ export default class App extends React.Component{
       <>
         <div className= "App">
           <Navbar />
-          <div className="tabela-inicial">
-            <h1>Zeus</h1>
+          <div class="column left">
+            <img src="../assets/Open Doodles - Doggie.png" alt="Trulli"></img>
           </div>
+          <div class="column middle">
+            <h2>Zeus</h2>
+          </div>
+          <div class="column right">
+            <h2>M</h2>
+          </div>
+          
         </div>
       </>
     );
