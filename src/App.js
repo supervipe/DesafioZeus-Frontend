@@ -9,7 +9,7 @@ export default class App extends React.Component{
         <div className= "App">
           <Navbar />
           <div class="column left">
-            <img src="../assets/Open Doodles - Doggie.png" alt="Trulli"></img>
+            <img src="http://localhost:3000//assets/Open Doodles - Doggie.png" alt="Trulli"></img>
           </div>
           <div class="column middle">
             <h2>Zeus</h2>
