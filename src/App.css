@@ -25,9 +25,11 @@ html {
 .middle {
     width: 50%;
     background-color: #354355;
-    height: 800px;
+    height: 500px;
     color: #ebe8db;
     margin-top: 50px;
+    /*border-style: solid;
+    border-color: #354355;*/
 }
 
 .row:after {
