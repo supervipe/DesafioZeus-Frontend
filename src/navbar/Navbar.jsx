@@ -22,13 +22,23 @@ class Navbar extends React.Component {
                             </a>
                         </li>
                         <li>
-                            <a className="nav-links" href="/">
+                            <a className="nav-links" href="/compra">
                                 Compras
                             </a>
                         </li>
                         <li>
-                            <a className="nav-links" href="/">
-                                Contato
+                            <a className="nav-links" href="/mudarSenha">
+                                Mudar Senha
+                            </a>
+                        </li>
+                        <li>
+                            <a className="nav-links" href="/sobre">
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a className="nav-links" href="/login">
+                                LogOut
                             </a>
                         </li>
                     </ul>
