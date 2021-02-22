@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import './Navbar.css';
-
+import icon from '../assets/icon.png'
 class Navbar extends React.Component {
     state = { clicked: false }
 
@@ -11,9 +11,10 @@ class Navbar extends React.Component {
         return (
             <>
                 <nav className="NavbarItems">
+                    <img src={icon} alt="Logo" height="70"/>
                     <h1 className="navbar-logo">Controle Pet<i className="fab fa-react"></i></h1>
                     <div className="menu-icon" onClick={this.handleClick}>
-                        <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                        <img src={icon} className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></img>
                     </div>
                     <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                         <li>

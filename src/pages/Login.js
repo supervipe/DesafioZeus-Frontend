@@ -1,6 +1,7 @@
 import React from 'react'
 import '../App.css';
 import {Login} from '../services/usuarioService.js'
+import icon from '../assets/icon.png'
 
 class LoginPage extends React.Component{
     
@@ -18,6 +19,7 @@ class LoginPage extends React.Component{
         return (
             <>
                 <nav className="NavbarItems">
+                    <img src={icon} alt="Logo" height="70"/>
                     <h1 className="navbar-logo">Controle Pet<i className="fab fa-react"></i></h1>
                     <div className="menu-icon" onClick={this.handleClick}>
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>

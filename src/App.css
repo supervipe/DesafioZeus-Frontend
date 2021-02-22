@@ -24,30 +24,35 @@ html {
 
 .middle {
     width: 50%;
-    background-color: #354355;
+    /*background-color: #354355;*/
     height: 500px;
-    color: #ebe8db;
+    color: #354355;
     margin-top: 50px;
     text-align: center;
-    /*border-style: solid;
-    border-color: #354355;*/
+    border-style: solid;
+    border-color: #354355;
 }
-.tamanho{
+
+.tamanho {
     font-size: 18px;
 }
+
 .absolut {
     position: absolute;
     right: 0;
     bottom: 0;
-  }
+}
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
 .a {
     visibility: hidden;
 }
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;
