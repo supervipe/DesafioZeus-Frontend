@@ -2,6 +2,8 @@ import React from 'react'
 import '../App.css';
 import {Cadastro} from '../services/usuarioService.js'
 import icon from '../assets/icon.png'
+import Doggie from '../assets/Doggie.png';
+import Playing from '../assets/Playing.png';
 
 class CadastroPage extends React.Component{
 
@@ -27,12 +29,18 @@ class CadastroPage extends React.Component{
                             </li>
                         </ul>
                     </nav>
-                <div className="column left"></div>
+                <div className="column left">
+                    <img src={Playing} alt="Playing" width="370"></img>
+                </div>
                 <div className="column middle">
+                    
+                    <br></br>
                     <h2>Coloque suas informações abaixo para cadastrar-se:</h2>
                     <Cadastro />
                 </div>
-                <div className="column right"></div>
+                <div className="column right absolut">
+                    <img src={Doggie} alt="Playing" width="370"></img>
+                </div>
             </>
         )
     }

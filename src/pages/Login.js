@@ -2,6 +2,8 @@ import React from 'react'
 import '../App.css';
 import {Login} from '../services/usuarioService.js'
 import icon from '../assets/icon.png'
+import Doggie from '../assets/Doggie.png';
+import Playing from '../assets/Playing.png';
 
 class LoginPage extends React.Component{
     
@@ -32,12 +34,18 @@ class LoginPage extends React.Component{
                         </li>
                     </ul>
                 </nav>
-                <div className="column left"></div>
+                <div className="column left">
+                    <img src={Playing} alt="Playing" width="370"></img>
+                </div>
                 <div className="column middle">
+                    <img src={icon} alt="Logo" height="200"/>
+                    <br></br>
                     <h2>Faça seu Login abaixo para entrar:</h2>
                     <Login />
                 </div>
-                <div className="column right"></div>
+                <div className="column right absolut">
+                    <img src={Doggie} alt="Playing" width="370"></img>
+                </div>
             </>
         )
     }

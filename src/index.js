@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import Sobre from './pages/Sobre'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import LoginPage from './pages/Login';
 import CadastroPage from './pages/Cadastro.js';
 import Compras from './pages/Compras';

@@ -29,7 +29,7 @@ class Navbar extends React.Component {
                         </li>
                         <li>
                             <a className="nav-links" href="/mudarSenha">
-                                Mudar Senha
+                                Perfil
                             </a>
                         </li>
                         <li>

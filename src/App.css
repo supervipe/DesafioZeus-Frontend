@@ -21,11 +21,17 @@ html {
 .right {
     width: 25%;
 }
-
+.borda {
+    background-color: #caced6;
+    text-align: center;
+    border-style: solid;
+    border-color: #354355;
+    color: black;
+}
 .middle {
     width: 50%;
     /*background-color: #354355;*/
-    height: 500px;
+    height: 750px;
     color: #354355;
     margin-top: 50px;
     text-align: center;
@@ -36,7 +42,10 @@ html {
 .tamanho {
     font-size: 18px;
 }
-
+.esquerda {
+    text-align:center;
+    justify-content: 'center';
+}
 .absolut {
     position: absolute;
     right: 0;
