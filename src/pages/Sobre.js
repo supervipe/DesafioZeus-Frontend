@@ -27,9 +27,9 @@ function Sobre() {
                     Para relato de problemas ou mais informações contactar:
                     <br></br>
                     <br></br>
-                    Telefone: (85) 99248-2002
+                    Telefone: (XX) XXXXX-XXXX
                     <br></br>
-                    Email: victorsantos@unifor.br
+                    Email: XXXXXX@gmail.com
                 </h3>
             </div>
             <div className="column right absolut">
