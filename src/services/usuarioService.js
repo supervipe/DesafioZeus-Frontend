@@ -76,11 +76,9 @@ export class Cadastro extends React.Component {
 
             
             const url2 = `http://localhost:8000/usuario/login/`;
-            const login = {
+            axios.post(url2, { 
                 email: this.state.email,
-                senha: this.state.senha
-            };
-            axios.post(url2, { login })
+                senha: this.state.senha })
             .then(res => {
                 console.log(res.data[0]);
                 if(res.data[0] != null) {
